@@ -34,7 +34,7 @@ function updateEmoji(playerSelection, computerSelection) {
   } else if (playerSelection === "paper") {
     playerEmoji.textContent = "✋";
   } else {
-    playerEmoji.textContent = "✌";
+    playerEmoji.textContent = "✌️";
   }
 
   const computerEmoji = document.querySelector("#computer-icon");
@@ -43,7 +43,7 @@ function updateEmoji(playerSelection, computerSelection) {
   } else if (computerSelection === "paper") {
     computerEmoji.textContent = "✋";
   } else {
-    computerEmoji.textContent = "✌";
+    computerEmoji.textContent = "✌️";
   }
 }
 
