@@ -64,19 +64,19 @@ function playRound(playerSelection, computerSelection) {
     }
   } else if (playerSelection === "paper") {
     if (computerSelection === "scissors") {
-      win();
+      lose();
     }
 
     if (computerSelection === "rock") {
-      lose();
+      win();
     }
   } else if (playerSelection === "scissors") {
     if (computerSelection === "paper") {
-      lose();
+      win();
     }
 
     if (computerSelection === "rock") {
-      win();
+      lose();
     }
   }
 }
