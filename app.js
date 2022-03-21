@@ -16,6 +16,9 @@ function lose() {
   document.querySelector("#computer-score").textContent = (prevScore + 1).toString();
   document.querySelector("#player-icon").classList.remove("bg-purple-800");
   document.querySelector("#computer-icon").classList.add("bg-purple-800");
+  setTimeout(() =>{
+    document.querySelector("#computer-icon").classList.remove("bg-purple-800");
+  }, 1000);
   document.querySelector("#result").textContent = "You lose!";
 }
 
@@ -23,6 +26,9 @@ function win() {
   const prevScore = parseInt(document.querySelector("#player-score").textContent);
   document.querySelector("#player-score").textContent = (prevScore + 1).toString();
   document.querySelector("#player-icon").classList.add("bg-purple-800");
+  setTimeout(() =>{
+    document.querySelector("#player-icon").classList.remove("bg-purple-800");
+  }, 1000);
   document.querySelector("#computer-icon").classList.remove("bg-purple-800");
   document.querySelector("#result").textContent = "You win!";
 }
