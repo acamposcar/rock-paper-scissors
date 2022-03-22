@@ -118,7 +118,10 @@ function resetGame() {
   document.querySelector('#round').textContent = round.toString();
   document.querySelector('#player-score').textContent = playerScore.toString();
   document.querySelector('#computer-score').textContent = computerScore.toString();
+  document.querySelector('#player-icon').textContent = '🤜';
+  document.querySelector('#computer-icon').textContent = '🤛';
   document.querySelector('#modal').classList.add('hidden');
+
 }
 
 
