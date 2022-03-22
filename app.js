@@ -131,9 +131,6 @@ document.querySelector('#player-paper').addEventListener('click', () => {
 document.querySelector('#player-scissors').addEventListener('click', () => {
   playRound('scissors', computerPlay());
 });
-document.querySelector('#player-scissors').addEventListener('click', () => {
-  playRound('scissors', computerPlay());
-});
 document.querySelector('#play_again').addEventListener('click', () => {
   resetGame();
 });
